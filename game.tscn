@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://2qee5m7qtqfe"]
+
+[ext_resource type="PackedScene" uid="uid://bjl5udtwyikqr" path="res://Level/level_map.tscn" id="1_lrggn"]
+[ext_resource type="PackedScene" uid="uid://d116ls3xsg0eh" path="res://Player/player.tscn" id="2_f54s2"]
+
+[node name="Game" type="Node2D"]
+
+[node name="LevelMap" parent="." instance=ExtResource("1_lrggn")]
+
+[node name="Player" parent="." instance=ExtResource("2_f54s2")]
+z_index = 1
+y_sort_enabled = true
